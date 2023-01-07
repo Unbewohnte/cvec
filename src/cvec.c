@@ -27,6 +27,7 @@ cvec cvec_new(size_t data_size, size_t cap) {
 void cvec_free(cvec* vec) {
     if (vec) {
         free(vec->contents);
+        vec->contents = NULL;
         vec = NULL;
     }
 }
