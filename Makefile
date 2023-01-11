@@ -5,4 +5,4 @@ clean:
 	rm -f test cvec.o cvec.a
 
 test: clean lib
-	gcc -Wall -Werror -O2 testing/test.c cvec.a -o test
+	gcc -Wall -Werror -O2 -static testing/test.c cvec.a -o test && ./test

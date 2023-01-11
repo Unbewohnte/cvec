@@ -9,7 +9,7 @@ The overall usage should be done via shipped cvec_* functions, but in case of th
 
 This snippet should give you the general idea of usage.
 
-```
+```c
 cvec vec = cvec_new(sizeof(size_t), 1);
 size_t val = 0x15dc;
 cvec_put(&vec, &val);
